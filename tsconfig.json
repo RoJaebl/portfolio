@@ -1,0 +1,12 @@
+{
+    "include": ["src/**/*.ts"], // typescript파일이 어디서 작성되는지 경로를 입력한다.
+    "compilerOptions": {
+        "outDir": "build/", // .ts가 .js로 변환되어 저장될 폴더 지정
+        "target": "es6", // 변환된 JS버전을 설정한다.
+        "lib": ["es6"],
+        "strict": true,
+        "esModuleInterop": true,
+        "module": "ES6",
+        "moduleResolution": "node"
+    }
+}

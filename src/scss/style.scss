@@ -1,0 +1,115 @@
+@import "components/.reset.scss";
+@import "components/.variables.scss";
+@import "components/.notion.scss";
+
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 700px;
+}
+content {
+    font-size: 0.7em;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+a,
+a > mark {
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid $--highlight-blue;
+    color: $--highlight-blue !important;
+    word-break: break-all;
+}
+
+.callout {
+    border: $--callout-border-default;
+    border-radius: 5px;
+}
+
+blockquote {
+    font-size: inherit;
+    font-weight: 600;
+}
+mark > strong {
+    font-weight: 600;
+}
+.row-flex-center {
+    display: flex;
+    align-items: center;
+    &h1,
+    h2,
+    h3 {
+        margin-top: inherit;
+    }
+}
+code {
+    letter-spacing: 0.05em;
+}
+summary {
+    &::marker {
+        color: $--highlight-blue;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+.page-haerder-icon {
+    max-width: 30%;
+}
+.callout-title {
+    font-weight: 600;
+    color: $--highlight-blue;
+}
+.notion-column-width-6 {
+    width: $--notion-column-width-6;
+}
+.notion-column-width-12 {
+    width: $--notion-column-width-12;
+}
+.notion-column-width-18 {
+    width: $--notion-column-width-18;
+}
+.notion-column-width-25 {
+    width: $--notion-column-width-25;
+}
+.notion-column-width-31 {
+    width: $--notion-column-width-31;
+}
+.notion-column-width-37 {
+    width: $--notion-column-width-37;
+}
+.notion-column-width-43 {
+    width: $--notion-column-width-43;
+}
+.notion-column-width-50 {
+    width: $--notion-column-width-50;
+}
+.notion-column-width-56 {
+    width: $--notion-column-width-56;
+}
+.notion-column-width-62 {
+    width: $--notion-column-width-62;
+}
+.notion-column-width-68 {
+    width: $--notion-column-width-68;
+}
+.notion-column-width-75 {
+    width: $--notion-column-width-75;
+}
+.notion-column-width-81 {
+    width: $--notion-column-width-81;
+}
+.notion-column-width-87 {
+    width: $--notion-column-width-87;
+}
+.notion-column-width-93 {
+    width: $--notion-column-width-93;
+}
+.notion-column-width-100 {
+    width: $--notion-column-width-100;
+}
+.notion-column-width-106 {
+    width: $--notion-column-width-106;
+}
