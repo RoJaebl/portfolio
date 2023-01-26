@@ -5,15 +5,36 @@
 * {
     box-sizing: border-box;
 }
+strong {
+    font-weight: 600;
+}
+
+.column-grid-2 {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: min-content;
+    align-items: center;
+    padding: 0 10px;
+    & blockquote {
+        word-break: break-all;
+        margin: 0;
+    }
+}
+details {
+    display: flex;
+    flex-direction: column;
+}
+.bookmark-href {
+    overflow: hidden;
+}
 body {
-    width: 700px;
+    max-width: 700px;
 }
 content {
     font-size: 0.7em;
     font-weight: 400;
     line-height: 1.5em;
 }
-
 a,
 a > mark {
     font-weight: 600;
@@ -22,7 +43,6 @@ a > mark {
     color: $--highlight-blue !important;
     word-break: break-all;
 }
-
 .callout {
     border: $--callout-border-default;
     border-radius: 5px;
@@ -31,6 +51,9 @@ a > mark {
 blockquote {
     font-size: inherit;
     font-weight: 600;
+    & a {
+        word-break: unset;
+    }
 }
 mark > strong {
     font-weight: 600;
@@ -38,7 +61,7 @@ mark > strong {
 .row-flex-center {
     display: flex;
     align-items: center;
-    &h1,
+    & h1,
     h2,
     h3 {
         margin-top: inherit;
@@ -53,6 +76,18 @@ summary {
         &:hover {
             cursor: pointer;
         }
+    }
+}
+.page-title {
+    font-size: 2rem;
+}
+@media (max-width: 720px) {
+    body {
+        width: 100%;
+        padding: 10px;
+    }
+    .page-title {
+        font-size: calc(4.5vw);
     }
 }
 .page-haerder-icon {
